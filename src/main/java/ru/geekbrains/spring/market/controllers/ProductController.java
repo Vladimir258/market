@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.geekbrains.spring.market.dtos.ProductDto;
 import ru.geekbrains.spring.market.entities.Product;
 import ru.geekbrains.spring.market.exceptions.AppError;
 import ru.geekbrains.spring.market.exceptions.ResourceNotFoundException;
@@ -11,6 +12,7 @@ import ru.geekbrains.spring.market.services.ProductService;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/products")
@@ -20,13 +22,17 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public List<Product> findAllProducts() {
-        return productService.findAll();
+    public List<ProductDto> findAllProducts() {
+        return productService.findAll()
+                .stream()
+                .map(p -> new ProductDto(p.getId(), p.getTitle(), p.getPrice()))
+                .collect(Collectors.toList());
     }
 
     @GetMapping("/{id}")
-    public Product findProductById(@PathVariable Long id) {
-        return productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Продукт не найден, id: " + id));
+    public ProductDto findProductById(@PathVariable Long id) {
+        Product p = productService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Продукт не найден, id: " + id));
+        return new ProductDto(p.getId(), p.getTitle(), p.getPrice());
     }
 
 

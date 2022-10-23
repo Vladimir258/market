@@ -1,7 +1,12 @@
 
-create table products (id bigserial primary key, title varchar(255), price int);
-insert into products (title, price) values
-('Milk', 80), ('Bread', 25), ('Cheese', 300);
+create table products
+(
+    id bigserial primary key,
+    title varchar(255),
+    price int,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp
+);
 
 create table users
 (
@@ -22,6 +27,11 @@ create table users_roles
    role_id bigint not null references roles (id),
    primary key (user_id, role_id)
 );
+
+insert into products (title, price)
+values  ('Milk', 80),
+        ('Bread', 25),
+        ('Cheese', 300);
 
 insert into roles (name)
 values  ('ROLE_USER'),
