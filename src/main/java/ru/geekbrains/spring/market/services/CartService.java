@@ -20,6 +20,4 @@ public class CartService {
     public void deleteByCart(Product product) {
         cartRepository.getCart().remove(product);
     }
-
-
 }
