@@ -23,6 +23,11 @@ public class CartController {
 
     @DeleteMapping("/{id}")
     public void deleteProductFromCartById(@PathVariable Long id) {
-        //cartService.deleteByCart(productService.findById(id).get());
+        cartService.del(id);
+    }
+
+    @GetMapping("/clear")
+    public void clearCart() {
+        cartService.clearCrt();
     }
 }

@@ -17,16 +17,41 @@ public class Cart {
         return Collections.unmodifiableList(items);
     }
 
-    // todo если продукт с таким id уже есть, применить счетчик продуктов
     public void add(Product product) {
+        for (CartItem i: items) {
+            if(i.getProductId().equals(product.getId())) {
+                i.setQuantity(i.getQuantity() + 1);
+                i.setPrice(i.getPricePerProduct() * i.getQuantity());
+                recalculate();
+                return;
+            }
+        }
         items.add(new CartItem(product.getId(), product.getTitle(), 1, product.getPrice(), product.getPrice()));
+        recalculate();
+    }
+
+    public void del(Product product) {
+        for (CartItem i: items) {
+            if(i.getProductId().equals(product.getId()) & i.getQuantity() > 1) {
+                i.setQuantity(i.getQuantity() - 1);
+                i.setPrice(i.getPrice() - i.getPricePerProduct());
+                recalculate();
+                return;
+            }
+        }
+        items.remove(new CartItem(product.getId(), product.getTitle(), 1, product.getPrice(), product.getPrice()));
+        recalculate();
+    }
+
+    public void clearS() {
+        items.clear();
         recalculate();
     }
 
     private void recalculate() {
         totalPrice = 0;
         for (CartItem item: items) {
-            totalPrice += item.getPrice();
+            totalPrice += item.getPrice() ;
         }
     }
 }
