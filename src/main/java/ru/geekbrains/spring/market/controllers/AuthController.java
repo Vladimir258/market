@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import ru.geekbrains.spring.market.dtos.JwtRequest;
 import ru.geekbrains.spring.market.dtos.JwtResponse;
+import ru.geekbrains.spring.market.dtos.StringResponse;
 import ru.geekbrains.spring.market.services.UserService;
 import ru.geekbrains.spring.market.utils.JwtTokenUtil;
+
+import java.security.Principal;
 
 
 @RestController
@@ -32,9 +35,13 @@ public class AuthController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
             //return new ResponseEntity<>(new AppError(HttpStatus.UNAUTHORIZED.value(), "Incorrect username or password"), HttpStatus.UNAUTHORIZED);
         }
-
         UserDetails userDetails = userService.loadUserByUsername(authRequest.getUsername());
         String token = jwtTokenUtil.generateToken(userDetails);
         return ResponseEntity.ok(new JwtResponse(token));
+    }
+
+    @GetMapping("/auth_check")
+    public StringResponse authCheck(Principal principal) {
+        return new StringResponse(principal.getName());
     }
 }

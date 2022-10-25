@@ -1,4 +1,4 @@
-package ru.geekbrains.spring.market.dtos;
+package ru.geekbrains.spring.market.models;
 
 import lombok.*;
 import ru.geekbrains.spring.market.entities.Product;

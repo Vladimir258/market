@@ -3,7 +3,7 @@ package ru.geekbrains.spring.market.services;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.spring.market.dtos.Cart;
+import ru.geekbrains.spring.market.models.Cart;
 import ru.geekbrains.spring.market.entities.Product;
 import ru.geekbrains.spring.market.exceptions.ResourceNotFoundException;
 
