@@ -1,17 +1,12 @@
 package ru.geekbrains.spring.market.controllers;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.geekbrains.spring.market.dtos.ProductDto;
 import ru.geekbrains.spring.market.entities.Product;
-import ru.geekbrains.spring.market.exceptions.AppError;
 import ru.geekbrains.spring.market.exceptions.ResourceNotFoundException;
 import ru.geekbrains.spring.market.services.ProductService;
-
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -35,7 +30,6 @@ public class ProductController {
         return new ProductDto(p.getId(), p.getTitle(), p.getPrice());
     }
 
-
 //    @GetMapping("/{id}")
 //    public ResponseEntity<?> findProductById(@PathVariable Long id) {
 //        Optional<Product> product = productService.findById(id);
@@ -51,8 +45,5 @@ public class ProductController {
         productService.deleteById(id);
     }
 
-    @ExceptionHandler
-    public ResponseEntity<AppError> exceptionHandler(ResourceNotFoundException e) {
-        return new ResponseEntity<>(new AppError(HttpStatus.NOT_FOUND.value(), e.getMessage()), HttpStatus.NOT_FOUND);
-    }
+
 }

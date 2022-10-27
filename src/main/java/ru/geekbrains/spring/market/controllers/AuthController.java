@@ -1,22 +1,13 @@
 package ru.geekbrains.spring.market.controllers;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.http.*;
+import org.springframework.security.authentication.*;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-import ru.geekbrains.spring.market.dtos.JwtRequest;
-import ru.geekbrains.spring.market.dtos.JwtResponse;
-import ru.geekbrains.spring.market.dtos.StringResponse;
+import org.springframework.web.bind.annotation.*;
+import ru.geekbrains.spring.market.dtos.*;
 import ru.geekbrains.spring.market.services.UserService;
 import ru.geekbrains.spring.market.utils.JwtTokenUtil;
-
 import java.security.Principal;
 
 
@@ -38,10 +29,5 @@ public class AuthController {
         UserDetails userDetails = userService.loadUserByUsername(authRequest.getUsername());
         String token = jwtTokenUtil.generateToken(userDetails);
         return ResponseEntity.ok(new JwtResponse(token));
-    }
-
-    @GetMapping("/auth_check")
-    public StringResponse authCheck(Principal principal) {
-        return new StringResponse(principal.getName());
     }
 }
