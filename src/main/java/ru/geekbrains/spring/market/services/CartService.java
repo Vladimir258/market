@@ -40,4 +40,7 @@ public class CartService {
     public void clearCrt() {
        tempCart.clearS();
     }
+
+    public void buyCrt() {
+    }
 }

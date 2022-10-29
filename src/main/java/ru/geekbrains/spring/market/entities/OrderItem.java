@@ -38,6 +38,7 @@ public class OrderItem {
     @Column(name = "price")
     private int price;
 
+
     @CreationTimestamp
     @Column(name = "created_at")
     private LocalDateTime createdAt;
@@ -45,4 +46,16 @@ public class OrderItem {
     @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
+
+//    public OrderItem(Product product) {
+//        this.product = product;
+//        this.quantity = 1;
+//        this.pricePerProduct = product.getPrice();
+//        this.price = product.getPrice();
+//    }
+
+    public void incrementQuantity() {
+        this.quantity++;
+        this.price = this.pricePerProduct * this.quantity;
+    }
 }

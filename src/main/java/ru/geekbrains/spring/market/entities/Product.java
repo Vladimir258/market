@@ -24,6 +24,12 @@ public class Product {
     @Column(name = "price")
     private int price;
 
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+
     @CreationTimestamp
     @Column(name = "created_at")
     private LocalDateTime createdAt;

@@ -85,10 +85,16 @@ angular.module('app', ['ngStorage']).controller('indexController', function ($sc
     }
 
     $scope.clearCart = function () {
-            $http.get('http://localhost:8189/market/api/v1/cart/clear').then(function (response) {
-                $scope.loadCart();
-            });
-        }
+        $http.get('http://localhost:8189/market/api/v1/cart/clear').then(function (response) {
+            $scope.loadCart();
+        });
+    }
+
+    $scope.buyCart = = function () {
+        $http.get('http://localhost:8189/market/api/v1/cart/buy').then(function (response) {
+            $scope.clearCart();
+        });
+    }
 
     $scope.loadProducts();
     $scope.loadCart();

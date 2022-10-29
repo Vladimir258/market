@@ -30,4 +30,9 @@ public class CartController {
     public void clearCart() {
         cartService.clearCrt();
     }
+
+    @GetMapping("/buy")
+    public void buyProductInCart() {
+        cartService.buyCrt();
+    }
 }
