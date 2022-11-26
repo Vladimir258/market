@@ -1,13 +1,11 @@
-package ru.geekbrains.spring.market;
+package ru.geekbrains.market.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MarketApplication {
-
+public class MarchMarketAuthApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(MarketApplication.class, args);
+		SpringApplication.run(MarchMarketAuthApplication.class, args);
 	}
-
 }
