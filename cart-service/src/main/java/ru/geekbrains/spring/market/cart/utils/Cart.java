@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class Cart {
+public abstract class Cart {
     private List<CartItem> items;
     private BigDecimal totalPrice;
 
@@ -45,4 +45,6 @@ public class Cart {
         totalPrice = BigDecimal.ZERO;
         items.forEach(i -> totalPrice = totalPrice.add(i.getPrice()));
     }
+
+    abstract void add();
 }
