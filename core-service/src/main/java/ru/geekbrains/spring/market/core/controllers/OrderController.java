@@ -3,9 +3,9 @@ package ru.geekbrains.spring.market.core.controllers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.march.market.api.OrderDto;
-import ru.geekbrains.march.market.core.converters.OrderConverter;
-import ru.geekbrains.march.market.core.services.OrderService;
+import ru.geekbrains.spring.market.api.OrderDto;
+import ru.geekbrains.spring.market.core.converters.OrderConverter;
+import ru.geekbrains.spring.market.core.services.OrderService;
 
 import java.util.List;
 import java.util.stream.Collectors;

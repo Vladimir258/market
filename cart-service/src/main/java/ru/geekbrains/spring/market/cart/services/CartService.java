@@ -3,9 +3,9 @@ package ru.geekbrains.spring.market.cart.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.march.market.api.ProductDto;
-import ru.geekbrains.march.market.cart.integrations.ProductServiceIntegration;
-import ru.geekbrains.march.market.cart.utils.Cart;
+import ru.geekbrains.spring.market.api.ProductDto;
+import ru.geekbrains.spring.market.cart.integrations.ProductServiceIntegration;
+import ru.geekbrains.spring.market.cart.utils.Cart;
 
 import java.util.function.Consumer;
 

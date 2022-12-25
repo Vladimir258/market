@@ -1,4 +1,4 @@
-package ru.geekbrains.spring.market.core.exceptions;
+package ru.geekbrains.spring.market.core.properties.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

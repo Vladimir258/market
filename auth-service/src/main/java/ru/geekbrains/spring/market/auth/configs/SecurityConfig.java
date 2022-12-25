@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.configs;
+package ru.geekbrains.spring.market.auth.configs;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

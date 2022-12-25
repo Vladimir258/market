@@ -1,12 +1,12 @@
-package ru.geekbrains.market.auth.controllers;
+package ru.geekbrains.spring.market.auth.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import ru.geekbrains.march.market.api.RegisterUserDto;
-import ru.geekbrains.march.market.auth.services.UserService;
+import ru.geekbrains.spring.market.api.RegisterUserDto;
+import ru.geekbrains.spring.market.auth.services.UserService;
 
 @RestController
 @RequiredArgsConstructor

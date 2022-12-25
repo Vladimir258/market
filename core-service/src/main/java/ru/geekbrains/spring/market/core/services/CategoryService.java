@@ -2,8 +2,8 @@ package ru.geekbrains.spring.market.core.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.march.market.core.entities.Category;
-import ru.geekbrains.march.market.core.repositories.CategoryRepository;
+import ru.geekbrains.spring.market.core.entities.Category;
+import ru.geekbrains.spring.market.core.repositories.CategoryRepository;
 
 import java.util.Optional;
 

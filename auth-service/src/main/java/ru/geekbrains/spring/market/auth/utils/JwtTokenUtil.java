@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.utils;
+package ru.geekbrains.spring.market.auth.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

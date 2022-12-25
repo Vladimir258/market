@@ -5,12 +5,12 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.march.market.api.ProductDto;
-import ru.geekbrains.march.market.core.converters.ProductConverter;
-import ru.geekbrains.march.market.core.entities.Product;
-import ru.geekbrains.march.market.core.exceptions.ResourceNotFoundException;
-import ru.geekbrains.march.market.core.repositories.specifications.ProductsSpecifications;
-import ru.geekbrains.march.market.core.services.ProductService;
+import ru.geekbrains.spring.market.api.ProductDto;
+import ru.geekbrains.spring.market.core.converters.ProductConverter;
+import ru.geekbrains.spring.market.core.entities.Product;
+import ru.geekbrains.spring.market.core.properties.exceptions.ResourceNotFoundException;
+import ru.geekbrains.spring.market.core.repositories.specifications.ProductsSpecifications;
+import ru.geekbrains.spring.market.core.services.ProductService;
 
 import java.math.BigDecimal;
 

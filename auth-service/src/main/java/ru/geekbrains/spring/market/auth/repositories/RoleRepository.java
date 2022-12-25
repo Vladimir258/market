@@ -1,8 +1,8 @@
-package ru.geekbrains.market.auth.repositories;
+package ru.geekbrains.spring.market.auth.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.geekbrains.march.market.auth.entities.Role;
+import ru.geekbrains.spring.market.auth.entities.Role;
 
 import java.util.Optional;
 

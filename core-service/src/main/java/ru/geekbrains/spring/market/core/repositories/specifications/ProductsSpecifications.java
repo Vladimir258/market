@@ -1,7 +1,7 @@
 package ru.geekbrains.spring.market.core.repositories.specifications;
 
 import org.springframework.data.jpa.domain.Specification;
-import ru.geekbrains.march.market.core.entities.Product;
+import ru.geekbrains.spring.market.core.entities.Product;
 
 import java.math.BigDecimal;
 

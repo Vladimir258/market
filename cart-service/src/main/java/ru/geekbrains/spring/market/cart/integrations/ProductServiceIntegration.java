@@ -3,7 +3,7 @@ package ru.geekbrains.spring.market.cart.integrations;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-import ru.geekbrains.march.market.api.ProductDto;
+import ru.geekbrains.spring.market.api.ProductDto;
 
 @Component
 @RequiredArgsConstructor

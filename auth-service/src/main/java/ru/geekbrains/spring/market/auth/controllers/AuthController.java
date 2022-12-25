@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.controllers;
+package ru.geekbrains.spring.market.auth.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,11 +10,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import ru.geekbrains.march.market.api.JwtRequest;
-import ru.geekbrains.march.market.api.JwtResponse;
-import ru.geekbrains.march.market.auth.exceptions.AppError;
-import ru.geekbrains.march.market.auth.services.UserService;
-import ru.geekbrains.march.market.auth.utils.JwtTokenUtil;
+import ru.geekbrains.spring.market.api.JwtRequest;
+import ru.geekbrains.spring.market.api.JwtResponse;
+import ru.geekbrains.spring.market.auth.exceptions.AppError;
+import ru.geekbrains.spring.market.auth.services.UserService;
+import ru.geekbrains.spring.market.auth.utils.JwtTokenUtil;
 
 @RestController
 @RequiredArgsConstructor

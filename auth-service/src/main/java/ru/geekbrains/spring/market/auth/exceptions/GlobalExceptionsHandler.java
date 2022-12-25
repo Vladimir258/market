@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.exceptions;
+package ru.geekbrains.spring.market.auth.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

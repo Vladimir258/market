@@ -1,8 +1,8 @@
 package ru.geekbrains.spring.market.core.converters;
 
 import org.springframework.stereotype.Component;
-import ru.geekbrains.march.market.api.OrderItemDto;
-import ru.geekbrains.march.market.core.entities.OrderItem;
+import ru.geekbrains.spring.market.api.OrderItemDto;
+import ru.geekbrains.spring.market.core.entities.OrderItem;
 
 @Component
 public class OrderItemConverter {

@@ -1,8 +1,8 @@
 package ru.geekbrains.spring.market.core.converters;
 
 import org.springframework.stereotype.Component;
-import ru.geekbrains.march.market.api.ProductDto;
-import ru.geekbrains.march.market.core.entities.Product;
+import ru.geekbrains.spring.market.api.ProductDto;
+import ru.geekbrains.spring.market.core.entities.Product;
 
 @Component
 public class ProductConverter {

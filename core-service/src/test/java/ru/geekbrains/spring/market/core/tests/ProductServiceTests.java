@@ -6,11 +6,11 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import ru.geekbrains.march.market.api.ProductDto;
-import ru.geekbrains.march.market.core.entities.Category;
-import ru.geekbrains.march.market.core.repositories.ProductRepository;
-import ru.geekbrains.march.market.core.services.CategoryService;
-import ru.geekbrains.march.market.core.services.ProductService;
+import ru.geekbrains.spring.market.api.ProductDto;
+import ru.geekbrains.spring.market.core.entities.Category;
+import ru.geekbrains.spring.market.core.repositories.ProductRepository;
+import ru.geekbrains.spring.market.core.services.CategoryService;
+import ru.geekbrains.spring.market.core.services.ProductService;
 
 import java.math.BigDecimal;
 import java.util.Collections;

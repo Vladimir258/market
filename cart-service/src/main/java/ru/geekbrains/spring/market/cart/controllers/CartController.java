@@ -2,10 +2,10 @@ package ru.geekbrains.spring.market.cart.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.march.market.api.CartDto;
-import ru.geekbrains.march.market.api.StringResponse;
-import ru.geekbrains.march.market.cart.converters.CartConverter;
-import ru.geekbrains.march.market.cart.services.CartService;
+import ru.geekbrains.spring.market.api.CartDto;
+import ru.geekbrains.spring.market.api.StringResponse;
+import ru.geekbrains.spring.market.cart.converters.CartConverter;
+import ru.geekbrains.spring.market.cart.services.CartService;
 
 import java.util.UUID;
 

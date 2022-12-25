@@ -11,7 +11,7 @@ import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 import reactor.netty.tcp.TcpClient;
-import ru.geekbrains.march.market.core.properties.CartServiceIntegrationProperties;
+import ru.geekbrains.spring.market.core.properties.CartServiceIntegrationProperties;
 
 import java.util.concurrent.TimeUnit;
 

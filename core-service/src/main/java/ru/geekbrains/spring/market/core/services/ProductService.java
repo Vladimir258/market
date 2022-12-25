@@ -5,10 +5,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import ru.geekbrains.march.market.api.ProductDto;
-import ru.geekbrains.march.market.core.entities.Product;
-import ru.geekbrains.march.market.core.exceptions.ResourceNotFoundException;
-import ru.geekbrains.march.market.core.repositories.ProductRepository;
+import ru.geekbrains.spring.market.api.ProductDto;
+import ru.geekbrains.spring.market.core.entities.Product;
+import ru.geekbrains.spring.market.core.properties.exceptions.ResourceNotFoundException;
+import ru.geekbrains.spring.market.core.repositories.ProductRepository;
 
 import java.util.Optional;
 

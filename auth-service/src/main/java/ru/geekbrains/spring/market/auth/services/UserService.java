@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.services;
+package ru.geekbrains.spring.market.auth.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
@@ -8,9 +8,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.geekbrains.march.market.auth.entities.Role;
-import ru.geekbrains.march.market.auth.entities.User;
-import ru.geekbrains.march.market.auth.repositories.UserRepository;
+import ru.geekbrains.spring.market.auth.entities.Role;
+import ru.geekbrains.spring.market.auth.entities.User;
+import ru.geekbrains.spring.market.auth.repositories.UserRepository;
 
 import java.util.Collection;
 import java.util.Optional;

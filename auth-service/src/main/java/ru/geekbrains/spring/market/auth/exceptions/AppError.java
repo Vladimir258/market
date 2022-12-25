@@ -1,4 +1,4 @@
-package ru.geekbrains.market.auth.exceptions;
+package ru.geekbrains.spring.market.auth.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package ru.geekbrains.spring.market.cart.utils;
 
 import lombok.Data;
-import ru.geekbrains.march.market.api.ProductDto;
+import ru.geekbrains.spring.market.api.ProductDto;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

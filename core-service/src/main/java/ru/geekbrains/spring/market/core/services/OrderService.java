@@ -3,12 +3,12 @@ package ru.geekbrains.spring.market.core.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.geekbrains.march.market.api.CartDto;
-import ru.geekbrains.march.market.core.entities.Order;
-import ru.geekbrains.march.market.core.entities.OrderItem;
-import ru.geekbrains.march.market.core.exceptions.ResourceNotFoundException;
-import ru.geekbrains.march.market.core.integrations.CartServiceIntegration;
-import ru.geekbrains.march.market.core.repositories.OrderRepository;
+import ru.geekbrains.spring.market.api.CartDto;
+import ru.geekbrains.spring.market.core.entities.Order;
+import ru.geekbrains.spring.market.core.entities.OrderItem;
+import ru.geekbrains.spring.market.core.properties.exceptions.ResourceNotFoundException;
+import ru.geekbrains.spring.market.core.integrations.CartServiceIntegration;
+import ru.geekbrains.spring.market.core.repositories.OrderRepository;
 
 import java.util.ArrayList;
 import java.util.List;

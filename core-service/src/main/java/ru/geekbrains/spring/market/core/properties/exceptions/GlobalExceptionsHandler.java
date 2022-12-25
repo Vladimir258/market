@@ -1,4 +1,4 @@
-package ru.geekbrains.spring.market.core.exceptions;
+package ru.geekbrains.spring.market.core.properties.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
