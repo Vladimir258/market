@@ -10,7 +10,8 @@
         <module>core-service</module>
         <module>front-service</module>
 		<module>gateway-service</module>
-	</modules>
+        <module>payment-service</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
